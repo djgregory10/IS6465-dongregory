@@ -1,0 +1,45 @@
+AI Use Requirement
+
+The AI tool used: Copilot
+
+
+One or more prompts you used:
+
+---------------------------------
+tutors.html
+
+Prompt: create a page that displays available peer tutors that includes: 1. A table with a caption, table header, and table body, 2. At least 10 sample tutors, 3. Columns for Tutor Name, Course.
+
+Result: AI generated the entire page with expected requirements, but the image was too big.
+
+New Prompt: align the top navigation to the right.
+
+Result: AI shrunk the image and put it next to the tutoring logo, on the left side.
+
+---------------------------------
+
+---------------------------------
+process-request.php
+
+Prompt: create a php tag that echos the message "Your tutoring request was received."
+
+Result: AI generated the entire php page with the correct message.
+
+---------------------------------
+
+---------------------------------
+process-request.php
+
+Prompt: move the logo image to the top left side of the page next to the logo
+
+Result: AI shrunk the image and put it next to the tutoring logo, on the left side.
+---------------------------------
+
+A brief explanation of how AI helped:
+
+AI helped me generate the correct pages so that they matched the requirements. It was able to generate each page correctly with minor adjustments. This is beneficial due to the amount of time it would have taken to type each tag out myself. It saved me a lot of time. I also like that it added the correct scripts and styles to the page, as specified in the instructions.
+
+
+One example of a suggestion you tested, revised, or rejected:
+
+I had to adjust the logo image on each page. The image was too large, so I aked AI to adjust and move the logo image to the correct spot. I then tested the resulting changes and they were correct.
