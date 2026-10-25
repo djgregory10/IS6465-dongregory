@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">    
+</head>
+
+<body>
+    <main class="container py-5">
+        <h1>Request a tutoring session</h1>
+        
+		<!-- course -->		
+        <form class="request-form" action="process-request.php" method="post">
+        <div class="form-group">
+            <label for="course">Course</label>
+            <input id="course" name="course" class="form-control" required>
+        </div>
+		
+		<!-- topic -->
+		<div class="form-group">
+            <label for="topic">What would you like help with?</label>
+            <input type="text" id="topic" name="topic" maxlength="120" required>
+        </div>
+
+		<!-- preferred date -->		
+		<div class="form-group">
+            <label for="preferreddate">Preferred date</label>
+            <input id="preferreddate" name="preferreddate" class="form-control" type="date" required>
+        </div>
+		
+		<!-- preferred time -->
+		<div class="form-group">
+            <label for="preferredtime">Preferred time</label>
+            <select id="preferredtime" name="preferredtime" class="form-select" required>
+                <option value="" selected disabled>Select a time</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+        </div>
+        
+        <button class="btn btn-danger" type="submit">Request session</button>
+        </form>
+    </main>
+    <script>
+        const dateInput = document.getElementById("preferreddate");
+        const d = new Date();
+        dateInput.min = d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+    </script>
+</body>
+
+</html>
